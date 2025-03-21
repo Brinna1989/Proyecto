@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Mercado</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../Assets/CSS/styles.css">
+
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <header>
+        <nav class="navbar">
+            <div>
+                <a class="navbar-brand" href="../../index.html">Cripto</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../index.html"><i class="fas fa-home"></i> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Tipos.html"><i class="fas fa-coins"></i> Tipos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Operaciones.html"><i class="fas fa-exchange-alt"></i> Operaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Seguridad.html"><i class="fas fa-lock"></i> Seguridad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Análisis de mercado.html"><i class="fas fa-chart-line"></i> Análisis</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- Contenido principal -->
+    <main class="container mt-5">
+        <section>
+            <h1>Análisis de Mercado</h1>
+            <p>El análisis de mercado es fundamental para comprender las tendencias en el mundo de las criptomonedas. Existen diferentes métodos utilizados por los inversores para tomar decisiones informadas.</p>
+        </section>
+
+        <section>
+            <h2>Análisis Técnico</h2>
+            <p>Se basa en el estudio de gráficos de precios, patrones y volúmenes de negociación para predecir futuros movimientos del mercado.</p>
+        </section>
+
+        <section>
+            <h2>Análisis Fundamental</h2>
+            <p>Evalúa el valor intrínseco de una criptomoneda observando su tecnología, equipo de desarrollo, adopción y otras métricas clave.</p>
+        </section>
+
+        <section>
+            <h2>Sentimiento del Mercado</h2>
+            <p>Analiza el sentimiento de los inversores a través de noticias, redes sociales y opiniones de expertos para medir el impacto en los precios.</p>
+        </section>
+
+        <section>
+            <h2>Indicadores Claves</h2>
+            <ul>
+                <li><strong>RSI (Índice de Fuerza Relativa):</strong> Indica si un activo está sobrecomprado o sobrevendido.</li>
+                <li><strong>Media Móvil:</strong> Suaviza las fluctuaciones de precios para identificar tendencias.</li>
+                <li><strong>Volumen de Comercio:</strong> Muestra la actividad del mercado y la fuerza de un movimiento de precios.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>© La información compartida aquí es solo con fines educativos y no constituye una recomendación de inversión.</p>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Script para cerrar el menú al hacer clic en un enlace -->
+<script>
+    document.querySelectorAll('.nav-link').forEach(item => {
+        item.addEventListener('click', () => {
+            let navbarCollapse = document.querySelector('.navbar-collapse');
+            if (navbarCollapse.classList.contains('show')) {
+                new bootstrap.Collapse(navbarCollapse).toggle();
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

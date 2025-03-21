@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones con Criptomonedas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../Assets/CSS/styles.css">
+
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <header>
+        <nav class="navbar">
+            <div>
+                <a class="navbar-brand" href="../../index.html">Cripto</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../index.html"><i class="fas fa-home"></i> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Tipos.html"><i class="fas fa-coins"></i> Tipos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Operaciones.html"><i class="fas fa-exchange-alt"></i> Operaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Seguridad.html"><i class="fas fa-lock"></i> Seguridad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Análisis de mercado.html"><i class="fas fa-chart-line"></i> Análisis</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container mt-5">
+        <section>
+            <h1>Operaciones con Criptomonedas</h1>
+            <p>El mundo de las criptomonedas ofrece una amplia gama de operaciones, desde transacciones básicas hasta estrategias avanzadas. Aquí te mostramos los principales tipos de operaciones:</p>
+        </section>
+
+        <section>
+            <h2>Compra y Venta Directa</h2>
+            <p>La operación más común, donde los usuarios compran o venden criptomonedas utilizando monedas fiduciarias (USD, EUR, etc.) o intercambian unas criptomonedas por otras.</p>
+        </section>
+
+        <section>
+            <h2>Trading de Criptomonedas</h2>
+            <p>Operaciones especulativas en las que los inversores aprovechan la volatilidad del mercado para obtener beneficios. Las modalidades más utilizadas son:</p>
+            <ul>
+                <li><strong>Day Trading:</strong> Compra y venta dentro del mismo día para aprovechar fluctuaciones rápidas de precios.</li>
+                <li><strong>Swing Trading:</strong> Operaciones que se mantienen durante días o semanas para captar tendencias de precios.</li>
+                <li><strong>Scalping:</strong> Estrategia que busca pequeños beneficios en movimientos de precios a corto plazo, con operaciones muy rápidas.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Staking</h2>
+            <p>Permite a los usuarios bloquear sus criptomonedas en una billetera para validar transacciones en blockchains que utilizan el protocolo Proof of Stake (PoS). A cambio, se reciben recompensas.</p>
+        </section>
+
+        <section>
+            <h2>Lending (Préstamos)</h2>
+            <p>Plataformas descentralizadas permiten prestar criptomonedas a otros usuarios a cambio de intereses. Esta operación es clave en las finanzas descentralizadas (DeFi).</p>
+        </section>
+
+        <section>
+            <h2>Operaciones con Derivados</h2>
+            <p>Incluye futuros, opciones y contratos de apalancamiento. Permiten especular sobre el precio de una criptomoneda sin poseerla directamente, lo que puede aumentar tanto las ganancias como las pérdidas.</p>
+        </section>
+
+        <section>
+            <h2>Yield Farming</h2>
+            <p>Una práctica avanzada en DeFi que busca maximizar los rendimientos al prestar o invertir criptomonedas en distintas plataformas.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>© La información compartida aquí es solo con fines educativos y no constituye una recomendación de inversión.</p>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Script para cerrar el menú al hacer clic en un enlace -->
+<script>
+    document.querySelectorAll('.nav-link').forEach(item => {
+        item.addEventListener('click', () => {
+            let navbarCollapse = document.querySelector('.navbar-collapse');
+            if (navbarCollapse.classList.contains('show')) {
+                new bootstrap.Collapse(navbarCollapse).toggle();
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

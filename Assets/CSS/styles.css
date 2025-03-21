@@ -1,0 +1,119 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css');
+
+/* Estilo global optimizado */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #1e3a5f;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navbar con Bootstrap */
+.navbar {
+    background-color: #e29ed9 !important;
+}
+
+.navbar-toggler {
+    border-color: rgb(255, 255, 255);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* Hace el icono blanco */
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #b61fc4 !important;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    color: #003366;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h2, h3 {
+    color: #336699;
+}
+
+/* Imágenes optimizadas */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Secciones con diseño avanzado */
+section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+/* Footer optimizado */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Estilos para el video */
+video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin: auto;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 20px;
+}
+
+video:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    section {
+        padding: 15px;
+    }
+}
